@@ -1,0 +1,232 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.bg-header {
+    background-image: url(/img/bg-header-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+}
+
+/* utilitaria */
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.btn-sucess {
+    background-color: #73456B;
+    
+}
+.btn-danger {
+    background-color: #F279A6;
+}
+.btn-dark {
+    background-color: #BF2A37;
+}
+/* utilitaria */
+
+.bg-navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem 0rem;
+
+    
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.nav-a a{
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    
+}
+.nav-logo img{
+    width: 2em;
+    
+}
+
+@media (min-width: 768px) {
+    .nav-logo {
+        flex-direction: row;
+        margin: 0;
+    }
+}
+
+.nav-a {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+}
+/* main */
+
+.main {
+    margin-top: -3rem;
+    background-color: white ;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* card */
+
+.card {
+    background-color: #A6444C;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 1rem;
+}
+.card-body h5 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    
+}
+.card-body p {
+    font-weight: 300;
+}
+
+/* nosotros */
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #A61C35;
+    
+}
+
+.nosotros-col-img {
+    background-image: url(/img/nosotros-min.png);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%; /* por trabajar con flexbox*/
+    order: 2;
+}
+
+.nosotros-col-text {
+    order: 1;
+}
+
+
+.nosotros-body {
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.nosotros-body h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.nosotros-body p {
+    font-weight: 200;
+
+}
+
+/* footer */
+
+.footer {
+    background-color: black;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+.footer-p {
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .tienda {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 578px) {
+    .nosotros-col-img {
+        height: 33rem;
+    }
+}
+@media (min-width: 768px) {
+    .nosotros {
+        flex-direction: row;
+    }
+    .nosotros-col-img {
+        order: 0;
+        flex: 1 1 0;
+    }
+    .nosotros-col-text {
+        order: 1;
+        flex: 1 1 0;
+    }
+    
+}
